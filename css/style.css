@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url("../fonts/VAGRoundedStd-Black.eot");
+  src: url("../fonts/VAGRoundedStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/VAGRoundedStd-Black.woff2") format("woff2"), url("../fonts/VAGRoundedStd-Black.woff") format("woff"), url("../fonts/VAGRoundedStd-Black.ttf") format("truetype"), url("../fonts/VAGRoundedStd-Black.svg#VAGRoundedStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url("../fonts/VAGRoundedStd-Bold.eot");
+  src: url("../fonts/VAGRoundedStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/VAGRoundedStd-Bold.woff2") format("woff2"), url("../fonts/VAGRoundedStd-Bold.woff") format("woff"), url("../fonts/VAGRoundedStd-Bold.ttf") format("truetype"), url("../fonts/VAGRoundedStd-Bold.svg#VAGRoundedStd-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url("../fonts/VAGRoundedStd-Light.eot");
+  src: url("../fonts/VAGRoundedStd-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/VAGRoundedStd-Light.woff2") format("woff2"), url("../fonts/VAGRoundedStd-Light.woff") format("woff"), url("../fonts/VAGRoundedStd-Light.ttf") format("truetype"), url("../fonts/VAGRoundedStd-Light.svg#VAGRoundedStd-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Eds Market Bold Script';
+  src: url("../fonts/EdsMarketBoldScript.eot");
+  src: url("../fonts/EdsMarketBoldScript.eot?#iefix") format("embedded-opentype"), url("../fonts/EdsMarketBoldScript.woff2") format("woff2"), url("../fonts/EdsMarketBoldScript.woff") format("woff"), url("../fonts/EdsMarketBoldScript.ttf") format("truetype"), url("../fonts/EdsMarketBoldScript.svg#EdsMarketBoldScript") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+.btn, .btn:focus {
+  outline: none;
+  box-shadow: none; }
+
+.form-control:focus {
+  border-color: #2F1305;
+  box-shadow: none !important; }
+
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  font-family: "VAG Rounded Std", sans;
+  font-weight: 300;
+  color: #2F1305; }
+  body a {
+    text-decoration: none;
+    color: #2F1305; }
+    body a:hover {
+      color: #F17400;
+      text-decoration: none; }
+
+/* Telefones em paisagem a tablet em retrato */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .navbar-toggler {
+    transition: all 0.2s ease-in; }
+    .navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
+      border: 0;
+      outline: 0;
+      box-shadow: 0; }
+    .navbar-toggler .navbar-toggler-icon {
+      width: inherit;
+      color: #FFECDB; }
+  .navbar-collapse ul.navbar-nav li.nav-item {
+    text-align: center; }
+  .produtos {
+    padding: 40px 0; }
+    .produtos h2.block-title {
+      font-size: 36px; }
+    .produtos .subtitle {
+      width: inherit; }
+  .about-us {
+    padding: 40px 0; }
+    .about-us h2.block-title {
+      font-size: 36px !important; }
+    .about-us .right-side img {
+      margin: 40px 0 0; }
+  .stores h2.block-title {
+    font-size: 36px !important; }
+  .stores .left-side {
+    margin: 0 0 60px; }
+  .footer {
+    padding-bottom: 170px; }
+    .footer .logo {
+      margin: 50px 0; }
+  .cookiealert {
+    padding: 15px; }
+  .zap-button {
+    width: 100%;
+    bottom: 120px;
+    right: 0;
+    left: 0;
+    text-align: center; }
+  .modal.regulamento .modal-body {
+    height: 300px; } }
+
+/* Tablet em retrato a paisagem e desktop */
+/* (1280x720) Galaxy Note 2, WXGA */
+/* (1280x1024) SXGA Display */
+@media screen and (max-width: 1280px) {
+  /* insert styles here */ }
+
+/* (1440x900) WXGA+ Display */
+@media screen and (max-width: 1440px) {
+  /* insert styles here */ }
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (max-width: 1680px) {
+  /* insert styles here */ }
+
+/* (1920x1080) Full HD Display */
+/* (1600x900) HD+ Display */
+/* (1366x768) WXGA Display */
+
+/*# sourceMappingURL=../maps/style.css.map */

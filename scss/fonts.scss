@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../fonts/VAGRoundedStd-Black.eot');
+    src: url('../fonts/VAGRoundedStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VAGRoundedStd-Black.woff2') format('woff2'),
+        url('../fonts/VAGRoundedStd-Black.woff') format('woff'),
+        url('../fonts/VAGRoundedStd-Black.ttf') format('truetype'),
+        url('../fonts/VAGRoundedStd-Black.svg#VAGRoundedStd-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../fonts/VAGRoundedStd-Bold.eot');
+    src: url('../fonts/VAGRoundedStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VAGRoundedStd-Bold.woff2') format('woff2'),
+        url('../fonts/VAGRoundedStd-Bold.woff') format('woff'),
+        url('../fonts/VAGRoundedStd-Bold.ttf') format('truetype'),
+        url('../fonts/VAGRoundedStd-Bold.svg#VAGRoundedStd-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../fonts/VAGRoundedStd-Light.eot');
+    src: url('../fonts/VAGRoundedStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VAGRoundedStd-Light.woff2') format('woff2'),
+        url('../fonts/VAGRoundedStd-Light.woff') format('woff'),
+        url('../fonts/VAGRoundedStd-Light.ttf') format('truetype'),
+        url('../fonts/VAGRoundedStd-Light.svg#VAGRoundedStd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eds Market Bold Script';
+    src: url('../fonts/EdsMarketBoldScript.eot');
+    src: url('../fonts/EdsMarketBoldScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EdsMarketBoldScript.woff2') format('woff2'),
+        url('../fonts/EdsMarketBoldScript.woff') format('woff'),
+        url('../fonts/EdsMarketBoldScript.ttf') format('truetype'),
+        url('../fonts/EdsMarketBoldScript.svg#EdsMarketBoldScript') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

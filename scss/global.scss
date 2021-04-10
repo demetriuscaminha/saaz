@@ -1,0 +1,15 @@
+body{
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: $font-default;
+    font-weight: 300;
+    color: $primary;
+    a{
+        text-decoration: none;
+        color: $primary;
+        &:hover{
+            color: $tertiary;
+            text-decoration: none;
+        }
+    }
+}

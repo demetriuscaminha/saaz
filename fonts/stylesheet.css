@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('VAGRoundedStd-Black.eot');
+    src: url('VAGRoundedStd-Black.eot?#iefix') format('embedded-opentype'),
+        url('VAGRoundedStd-Black.woff2') format('woff2'),
+        url('VAGRoundedStd-Black.woff') format('woff'),
+        url('VAGRoundedStd-Black.ttf') format('truetype'),
+        url('VAGRoundedStd-Black.svg#VAGRoundedStd-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('VAGRoundedStd-Bold.eot');
+    src: url('VAGRoundedStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('VAGRoundedStd-Bold.woff2') format('woff2'),
+        url('VAGRoundedStd-Bold.woff') format('woff'),
+        url('VAGRoundedStd-Bold.ttf') format('truetype'),
+        url('VAGRoundedStd-Bold.svg#VAGRoundedStd-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('VAGRoundedStd-Light.eot');
+    src: url('VAGRoundedStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('VAGRoundedStd-Light.woff2') format('woff2'),
+        url('VAGRoundedStd-Light.woff') format('woff'),
+        url('VAGRoundedStd-Light.ttf') format('truetype'),
+        url('VAGRoundedStd-Light.svg#VAGRoundedStd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eds Market Bold Script';
+    src: url('EdsMarketBoldScript.eot');
+    src: url('EdsMarketBoldScript.eot?#iefix') format('embedded-opentype'),
+        url('EdsMarketBoldScript.woff2') format('woff2'),
+        url('EdsMarketBoldScript.woff') format('woff'),
+        url('EdsMarketBoldScript.ttf') format('truetype'),
+        url('EdsMarketBoldScript.svg#EdsMarketBoldScript') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
