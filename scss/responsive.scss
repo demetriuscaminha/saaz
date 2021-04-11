@@ -2,74 +2,7 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 767px) {
-    .navbar-toggler{
-        transition: all 0.2s ease-in;
-        &:hover, &:focus, &:active{
-            border: 0;
-            outline: 0;
-            box-shadow: 0;
-        }
-        .navbar-toggler-icon{
-            width: inherit;
-            color: $header;
-        }
-    }
-    .navbar-collapse{
-        ul.navbar-nav{
-            li.nav-item{
-                text-align: center;
-            }
-        }
-    }
-    .produtos{
-        padding: 40px 0;
-        h2.block-title{
-            font-size: 36px;
-        }
-        .subtitle {
-            width: inherit;
-        }
-    }
-    .about-us {
-        padding: 40px 0;
-        h2.block-title{
-            font-size: 36px !important;
-        }
-        .right-side {
-            img{
-                margin: 40px 0 0;
-            }
-        }
-    }
-    .stores{
-        h2.block-title{
-            font-size: 36px !important;
-        }
-        .left-side{
-            margin: 0 0 60px;
-        }
-    }
-    .footer{
-        padding-bottom: 170px;
-        .logo{
-            margin: 50px 0;
-        }
-    }
-    .cookiealert{
-        padding: 15px;
-    }
-    .zap-button {
-        width: 100%;
-        bottom: 120px;
-        right: 0;
-        left: 0;
-        text-align: center;
-    }
-    .modal.regulamento{
-        .modal-body{
-            height: 300px;
-        }
-    }
+
 }
 
 /* Tablet em retrato a paisagem e desktop */
