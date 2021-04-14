@@ -1,6 +1,7 @@
 .btn, .btn:focus{
     outline: none;
     box-shadow: none;
+    transition: all ease 0.4s;
 }
 .form-control {
     &:focus{
@@ -11,5 +12,18 @@
 
 %block-title{
     font-family: $font-secondary;
-    font-size: 56px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    &:before{
+        content: "";
+        width: 66px;
+        height: 15px;
+        background: transparent url(../images/wave.png) no-repeat center center;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+    }
 }

@@ -3,26 +3,134 @@ body{
     overflow-x: hidden;
     font-family: $font-default;
     font-weight: 300;
-    color: $primary;
+    color: $main-color;
+    padding-top: 180px;
     a{
         text-decoration: none;
-        color: $primary;
+        color: $main-color;
+        transition: all ease 0.4s;
         &:hover{
-            color: $tertiary;
+            color: $secondary;
             text-decoration: none;
         }
     }
 }
+.social{
+    a.social{
+        color: white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 1px solid white;
+        i{
+            margin: 0 !important;
+        }
+        &:hover{
+            color: $tertiary;
+            border: 1px solid $tertiary;
+        }
+    }
+}
 .header{
+    background: white;
+    padding: 0;
+    transition: all ease 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 180px;
     .top-header{
         background: $secondary;
+        display: block;
         height: 40px;
-        .social{
-
+        transition: all ease 0.4s;
+        .contact{
+            a{
+                color: white;
+                &:hover{
+                    color: $tertiary;
+                }
+            }
         }
     }
     .header-content{
         height: 130px;
+        transition: all ease 0.4s;
+        .logo{
+            height: auto;
+            transition: all ease 0.4s;
+        }
+    }
+    ul.nav{
+        li.nav-item{
+            a{
+                font-family: $font-secondary;
+                font-size: 18px;
+                font-weight: bold;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 66px;
+                    height: 15px;
+                    background: transparent url(../images/wave.png) no-repeat center center;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -33px;
+                    bottom: -5px;
+                }
+            }
+        }
+    }
+}
+/* Animation */
+.animate{
+    height: 80px;
+    transition: all ease 0.4s;
+    .top-header{
+        display: none !important;
+        transition: all ease 0.4s;
+    }
+    .header-content{
+        height: 80px;
+        transition: all ease 0.4s;
+        .logo{
+            height: 60px !important;
+            transition: all ease 0.4s;
+        }
+    }
+}
+.aboutus{
+    padding: 100px 0;
+    h1.block-title{
+        @extend %block-title;
+    }
+    .content-left{
+        background: transparent url(../images/bg-aboutus.png) no-repeat center center;
+        .block-content{
+            font-size: 16px;
+            line-height: 28px;
+        }
+        .actions{
+            margin: 40px 0 0;
+            .btn{
+                background: $primary;
+                border-radius: 0;
+                color: white;
+                width: 300px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    background: $hover-btn-primary;
+                }
+            }
+        }
     }
 }
 .partners{
@@ -83,9 +191,103 @@ body{
     min-height: 400px;
     background: transparent;
 }
+.contact{
+    padding: 100px 0;
+    h1.block-title{
+        @extend %block-title;
+    }
+    .content-right{
+        .content-info{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 30px;
+        }
+        .left-item{
+            .title{
+                font-family: $font-secondary;
+                font-weight: bold;
+                font-size: 22px;
+                color: #8E8E8E;
+                i{
+                    font-size: 14px;
+                    position: relative;
+                    top: -8px;
+                    transform: rotate(-20deg);
+                    margin-left: 5px;
+                }
+            }
+            .text-content{
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        .right-item{
+            .title{
+                font-family: $font-secondary;
+                font-weight: bold;
+                font-size: 22px;
+                color: #8E8E8E;
+                i{
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+            .text-content{
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        .contactForm{
+            .form-control{
+                height: 46px;
+                border-radius: 0;
+                background: $color-field;
+                border: 0;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                &.form-textarea{
+                    height: inherit;
+                }
+            }
+            .actions{
+                margin: 40px 0 0;
+                .btn{
+                    background: $primary;
+                    border-radius: 0;
+                    color: white;
+                    width: 210px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        background: $hover-btn-primary;
+                    }
+                }
+            }
+        }
+    }
+}
 .footer{
     background: $secondary;
     padding: 80px 0 0;
+    a{
+        color: white;
+        &:hover{
+            color: $tertiary;
+        }
+    }
+    .item{
+        h3{
+            font-family: $font-secondary;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 10px;
+        }
+    }
     .bottom-footer{
         background: #D48611 url("../images/footer-art.png") repeat-x top center;
         padding: 140px 0 0;
