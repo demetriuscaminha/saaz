@@ -52,6 +52,11 @@
   box-shadow: none !important;
   transition: all ease 0.4s; }
 
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none !important; }
+
 .form-control:focus {
   border-color: #008A87;
   box-shadow: none !important; }
@@ -173,7 +178,8 @@ body {
         height: 50px;
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        border: 0; }
         .aboutus .content-left .actions .btn:hover {
           background: #1b5f5d; }
 
@@ -270,7 +276,8 @@ body {
       height: 50px;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      border: 0; }
       .contact .content-right .contactForm .actions .btn:hover {
         background: #1b5f5d; }
 

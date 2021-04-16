@@ -3,6 +3,11 @@
     box-shadow: none !important;
     transition: all ease 0.4s;
 }
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus{
+    box-shadow: none !important;
+}
 .form-control {
     &:focus{
         border-color: $primary;
