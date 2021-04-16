@@ -30,7 +30,7 @@ try {
     $mail->SMTPAuth   = true;
     $mail->SMTPSecure = "ssl";
     $mail->Username   = 'atendimento@saazdistribuidora.com.br';
-    $mail->Password   = 'RCuH3auf6kYt';
+    $mail->Password   = 'Saaz@2021';
     $mail->Port       = 465;
 
     //Recipients
@@ -43,10 +43,9 @@ try {
     $mail->Body    = $body;
     $mail->AltBody = strip_tags($body);
 
-    $mail->send();
+    //$mail->send();
     echo 'Menssagem Enviada!';
-
-    header('Location: index.html#cupom-form?modal');
+    header('Location: index.html?modal');
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "A mensagem não pôde ser enviada. Erro no E-mail: {$mail->ErrorInfo}";
 }

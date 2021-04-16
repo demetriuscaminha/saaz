@@ -73,15 +73,17 @@ body{
                 font-size: 18px;
                 font-weight: bold;
                 position: relative;
-                &:before{
-                    content: "";
-                    width: 66px;
-                    height: 15px;
-                    background: transparent url(../images/wave.png) no-repeat center center;
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -33px;
-                    bottom: -5px;
+                &.active{
+                    &:before{
+                        content: "";
+                        width: 66px;
+                        height: 15px;
+                        background: transparent url(../images/wave.png) no-repeat center center;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -33px;
+                        bottom: -5px;
+                    }
                 }
             }
         }
@@ -293,6 +295,7 @@ body{
         padding: 140px 0 0;
     }
     .stg{
+        background: #e08e13;
         margin: 40px 0 0;
     }
 }
@@ -324,4 +327,24 @@ body{
         }
     }
     
+}
+#modalConfirmacao{
+    .modal-content{
+        background: white;
+        color: $color-alert-sucess;
+        .modal-header{
+            border: 0;
+            h5{
+                color: $color-alert-sucess;
+            }
+        }
+        .modal-body{
+            p{
+                margin: 0;
+            }
+        }
+        .modal-footer{
+            border: 0;
+        }
+    }
 }

@@ -1,6 +1,6 @@
-.btn, .btn:focus{
+.btn, .btn:focus, .btn:active{
     outline: none;
-    box-shadow: none;
+    box-shadow: none !important;
     transition: all ease 0.4s;
 }
 .form-control {

@@ -47,9 +47,9 @@
   font-style: normal;
   font-display: swap; }
 
-.btn, .btn:focus {
+.btn, .btn:focus, .btn:active {
   outline: none;
-  box-shadow: none;
+  box-shadow: none !important;
   transition: all ease 0.4s; }
 
 .form-control:focus {
@@ -132,7 +132,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     position: relative; }
-    .header ul.nav li.nav-item a:before {
+    .header ul.nav li.nav-item a.active:before {
       content: "";
       width: 66px;
       height: 15px;
@@ -290,6 +290,7 @@ body {
     background: #D48611 url("../images/footer-art.png") repeat-x top center;
     padding: 140px 0 0; }
   .footer .stg {
+    background: #e08e13;
     margin: 40px 0 0; }
 
 .zap-button {
@@ -317,6 +318,18 @@ body {
       border: 0;
       outline: none;
       box-shadow: none !important; }
+
+#modalConfirmacao .modal-content {
+  background: white;
+  color: #155724; }
+  #modalConfirmacao .modal-content .modal-header {
+    border: 0; }
+    #modalConfirmacao .modal-content .modal-header h5 {
+      color: #155724; }
+  #modalConfirmacao .modal-content .modal-body p {
+    margin: 0; }
+  #modalConfirmacao .modal-content .modal-footer {
+    border: 0; }
 
 /* Telefones em paisagem a tablet em retrato */
 /* Tablet em retrato a paisagem e desktop */
