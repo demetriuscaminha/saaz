@@ -46,7 +46,6 @@ body{
     height: 180px;
     .top-header{
         background: $secondary;
-        display: block;
         height: 40px;
         transition: all ease 0.4s;
         .contact{
@@ -66,7 +65,7 @@ body{
             transition: all ease 0.4s;
         }
     }
-    ul.nav{
+    ul.navbar-nav{
         li.nav-item{
             a{
                 font-family: $font-secondary;

@@ -119,7 +119,6 @@ body {
   height: 180px; }
   .header .top-header {
     background: #FF6B10;
-    display: block;
     height: 40px;
     transition: all ease 0.4s; }
     .header .top-header .contact a {
@@ -132,12 +131,12 @@ body {
     .header .header-content .logo {
       height: auto;
       transition: all ease 0.4s; }
-  .header ul.nav li.nav-item a {
+  .header ul.navbar-nav li.nav-item a {
     font-family: "Roboto Condensed", sans;
     font-size: 18px;
     font-weight: bold;
     position: relative; }
-    .header ul.nav li.nav-item a.active:before {
+    .header ul.navbar-nav li.nav-item a.active:before {
       content: "";
       width: 66px;
       height: 15px;
@@ -339,6 +338,81 @@ body {
     border: 0; }
 
 /* Telefones em paisagem a tablet em retrato */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  body {
+    padding-top: 100px; }
+  .animate {
+    height: 100px;
+    transition: all ease 0.4s; }
+    .animate .top-header {
+      display: none !important;
+      transition: all ease 0.4s; }
+    .animate .header-content {
+      height: 100px;
+      transition: all ease 0.4s; }
+      .animate .header-content .logo {
+        height: 60px !important;
+        transition: all ease 0.4s; }
+  .top-header {
+    display: none !important; }
+  .header {
+    height: 100px; }
+    .header .header-content {
+      height: 100px; }
+      .header .header-content .container {
+        padding: 0; }
+      .header .header-content .logo {
+        height: 60px !important;
+        margin: 10px 0 0 20px; }
+  .navbar .navbar-toggler {
+    padding: 0;
+    margin: 0 20px 0 0; }
+    .navbar .navbar-toggler:focus {
+      outline: none;
+      border: 0; }
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    background: #F2F2F2;
+    transition: all ease 0.4s;
+    width: 100%; }
+    .navbar .navbar-collapse ul.navbar-nav li.nav-item {
+      text-align: center; }
+  .aboutus {
+    padding: 40px 0; }
+    .aboutus .container {
+      flex-direction: column; }
+    .aboutus .content-left {
+      padding: 0 !important;
+      width: 100% !important;
+      margin-bottom: 40px; }
+    .aboutus .content-right {
+      width: 100% !important; }
+    .aboutus .actions {
+      display: flex;
+      justify-content: center; }
+  .contact {
+    padding: 40px 0; }
+    .contact .container {
+      flex-direction: column; }
+      .contact .container .content-left {
+        width: 100% !important;
+        margin: 0 0 40px; }
+      .contact .container .content-right {
+        width: 100% !important; }
+        .contact .container .content-right .content-info {
+          flex-direction: column; }
+          .contact .container .content-right .content-info .left-item {
+            margin: 0 0 20px; }
+      .contact .container .contactForm .actions {
+        justify-content: center !important; }
+        .contact .container .contactForm .actions .btn {
+          width: 300px; }
+  footer {
+    padding: 20px 0 0 !important; }
+    footer .top-footer .item {
+      margin: 20px 0; } }
+
 /* Tablet em retrato a paisagem e desktop */
 /* (1280x720) Galaxy Note 2, WXGA */
 /* (1280x1024) SXGA Display */

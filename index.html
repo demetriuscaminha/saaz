@@ -57,25 +57,31 @@
     
     <div class="header-content d-flex align-items-center">
       <div class="container d-flex justify-content-between align-items-center">
-        <div class="content-left">
-          <embed type="image/svg+xml" src="images/logo.svg" class="logo"/>
-        </div>
-        <div class="content-right">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#top-content">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">QUEM SOMOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#partners">NOSSAS MARCAS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTATO</a>
-            </li>
-          </ul>
-        </div>
+
+        <nav class="navbar navbar-expand-lg w-100 p-0">
+          <a class="navbar-brand" href="#"><embed type="image/svg+xml" src="images/logo.svg" class="logo"/></a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse" style="">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active"  href="#top-content">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">QUEM SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners">NOSSAS MARCAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTATO</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+
       </div>
     </div>
   </section>
@@ -194,22 +200,22 @@
     <div class="top-footer text-white">
       <div class="container">
         <div class="row">
-          <div class="item item-1 col text-center">
+          <div class="item item-1 col-md-3 col-sm-12 text-center">
             <img src="images/icon-1.png">
             <h3>Localização</h3>
             <div><a href="https://goo.gl/maps/XjHLiHtdEBgr1CR17">Rua Des. Anisio Jobim, 1521<br>Colônia Antônio Aleixo, Manaus - AM</a></div>
           </div>
-          <div class="item item-2 col text-center">
+          <div class="item item-2  col-md-3 col-sm-12  text-center">
             <img src="images/icon-2.png">
             <h3>Telefone e E-mail</h3>
             <div><a href="tel:+5592994528416" class="phone">(92) 99452-8416</a><br><a href="mailto:atendimento@saazdistribuidora.com.br">atendimento@saazdistribuidora.com.br</a></div>
           </div>
-          <div class="item item-3 col text-center">
+          <div class="item item-3  col-md-3 col-sm-12  text-center">
             <img src="images/icon-3.png">
             <h3>Horário de atendimento</h3>
             <div>Segunda à sexta: 08 às 17h</div>
           </div>
-          <div class="item item-4 col text-center">
+          <div class="item item-4  col-md-3 col-sm-12  text-center">
             <img src="images/icon-4.png">
             <h3>Redes sociais</h3>
             <div class="social d-flex justify-content-center">
@@ -222,9 +228,9 @@
     </div>
     <div class="bottom-footer">
       <div class="wrapper d-flex align-items-center justify-content-center">
-        <div class="lines"><img src="images/lines.png"></div>
+        <div class="lines d-none d-sm-block"><img src="images/lines.png"></div>
         <embed type="image/svg+xml" src="images/logo-footer.svg" />
-        <div class="lines"><img src="images/lines.png"></div>
+        <div class="lines d-none d-sm-block"><img src="images/lines.png"></div>
       </div>
       <div class="stg d-flex align-items-center justify-content-center"><a href="https://www.stgconsult.com.br/" target="_blank"><img src="images/stg.png" alt="Faça seu site com a gente" title="Faça seu site com a gente"></a></div>
     </div>
@@ -264,14 +270,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.js"></script>
 
-  <script language="JavaScript" type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel').carousel({
-        interval: 2000
-      })
-    });    
-  </script>
-
   <!--Owl-carousel Brands-->
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
@@ -310,6 +308,7 @@
     $('a.nav-link').click(function(){
       $('a.nav-link').removeClass('active');
       $(this).addClass('active');
+      $('.navbar-collapse').removeClass('show');
       $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 500);
