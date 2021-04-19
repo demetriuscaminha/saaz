@@ -411,7 +411,10 @@ body {
   footer {
     padding: 20px 0 0 !important; }
     footer .top-footer .item {
-      margin: 20px 0; } }
+      margin: 20px 0; }
+  .zap-button {
+    right: 0;
+    bottom: 40px; } }
 
 /* Tablet em retrato a paisagem e desktop */
 /* (1280x720) Galaxy Note 2, WXGA */
